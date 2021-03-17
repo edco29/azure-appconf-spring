@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 /*
 
-    Delete this class if you use Managed Identity
+    Delete this class when the authentication method is Managed Identity
  */
 @Configuration
 public class AppConfiguration {

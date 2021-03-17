@@ -12,7 +12,7 @@ public class AzureCredentials implements AppConfigurationCredentialProvider, Key
     public final String AZURE_AD_URL ="https://login.microsoftonline.com/";
 
 
-    // this  snippet code just works  with service principal connexion
+    // this   code snippet  just works  with service principal
     @Override
     public TokenCredential getKeyVaultCredential(String uri) {
         return getCredential();
@@ -27,7 +27,7 @@ public class AzureCredentials implements AppConfigurationCredentialProvider, Key
         return new EnvironmentCredentialBuilder().authorityHost(AZURE_AD_URL).build();
     }
     /*
-     enable this  snippet code in order to use managed Identity and delete the snippet code describe above
+     enable this  code snippet in order to use managed Identity and delete the  code snippet describe above
 
      @Override
     public TokenCredential getKeyVaultCredential(String uri) {
